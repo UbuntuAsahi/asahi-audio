@@ -1,0 +1,22 @@
+Source: asahi-audio
+Section: misc
+Priority: optional
+Maintainer: Tobias Heider <me@tobhe.de>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/AsahiLinux/asahi-audio
+Vcs-Browser: https://salsa.debian.org/bananas-team/asahi-audio
+Vcs-Git: https://salsa.debian.org/bananas-team/asahi-audio.git
+Rules-Requires-Root: no
+
+Package: asahi-audio
+Architecture: arm64
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+ ${shlibs:Depends},
+ pipewire (>= 0.3.84),
+ wireplumber (>= 0.4.15),
+ lsp-plugins-lv2
+Description: PipeWire DSP profiles for Apple Silicon machines
+ PipeWire and WirePlumber DSP profiles and configurations to
+ drive the speaker arrays in Apple Silicon laptops and desktops.
