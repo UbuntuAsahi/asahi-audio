@@ -14,8 +14,8 @@ Architecture: arm64
 Multi-Arch: foreign
 Depends: ${misc:Depends},
  ${shlibs:Depends},
- pipewire (>= 0.3.84),
- wireplumber (>= 0.4.15),
+ pipewire (>= 0.3.81),
+ wireplumber (>= 0.4.14),
  lsp-plugins-lv2
 Description: PipeWire DSP profiles for Apple Silicon machines
  PipeWire and WirePlumber DSP profiles and configurations to
