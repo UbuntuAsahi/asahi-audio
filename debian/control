@@ -1,5 +1,5 @@
 Source: asahi-audio
-Section: misc
+Section: sound
 Priority: optional
 Maintainer: Tobias Heider <me@tobhe.de>
 Build-Depends: debhelper-compat (= 13)
