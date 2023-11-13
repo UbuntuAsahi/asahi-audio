@@ -15,8 +15,9 @@ Multi-Arch: foreign
 Depends: ${misc:Depends},
  ${shlibs:Depends},
  pipewire (>= 0.3.81),
- wireplumber (>= 0.4.14),
+ wireplumber (>= 0.4.15-2~),
  lsp-plugins-lv2
+Recommends: lv2-bankstown, speakersafetyd
 Description: PipeWire DSP profiles for Apple Silicon machines
  PipeWire and WirePlumber DSP profiles and configurations to
  drive the speaker arrays in Apple Silicon laptops and desktops.
