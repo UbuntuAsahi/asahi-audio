@@ -1,5 +1,5 @@
-asahi-audio (0.5-1) unstable; urgency=medium
+asahi-audio (0.5-1) experimental; urgency=medium
 
-  * Initial release. (Closes: #XXXXXX)
+  * Initial release. (Closes: #1055943)
 
- -- Tobias Heider <me@tobhe.de>  Sun, 12 Nov 2023 21:06:03 +0100
+ -- Tobias Heider <me@tobhe.de>  Tue, 14 Nov 2023 16:20:04 +0100
