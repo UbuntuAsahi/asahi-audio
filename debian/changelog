@@ -1,3 +1,9 @@
+asahi-audio (1.6-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 20 Dec 2023 20:19:57 +0100
+
 asahi-audio (0.5-1) experimental; urgency=medium
 
   * Initial release. (Closes: #1055943)
