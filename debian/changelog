@@ -1,3 +1,10 @@
+asahi-audio (1.6-1) unstable; urgency=medium
+
+  * New upstream version
+  * Rename lv2-bankstown to bankstown-lv2
+
+ -- Tobias Heider <me@tobhe.de>  Fri, 22 Dec 2023 21:48:12 +0100
+
 asahi-audio (0.5-1) experimental; urgency=medium
 
   * Initial release. (Closes: #1055943)
