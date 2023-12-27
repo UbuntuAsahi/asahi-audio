@@ -1,6 +1,6 @@
 {
-    "node.description": "MacBook Air J415 Speakers",
-    "media.name": "MacBook Air J415 Speakers",
+    "node.description": "MacBook Air J413 Speakers",
+    "media.name": "MacBook Air J413 Speakers",
     "filter.graph": {
         "nodes": [
             {
@@ -9,12 +9,12 @@
                 "name": "bassex",
                 "control": {
                     "bypass": 0,
-                    "amt": 1.5,
-                    "sat_second": 1.3,
-                    "sat_third": 2.5,
-                    "blend": 0.65,
-                    "ceil": 200.0,
-                    "floor": 20.0,
+                    "amt": 1.2,
+                    "sat_second": 1.05,
+                    "sat_third": 1.3,
+                    "blend": 0.31,
+                    "ceil": 220.0,
+                    "floor": 140.0,
                 }
             },
             {
@@ -43,13 +43,13 @@
                 "name": "convLT",
                 "config": {
                     "filename": [
-                        "/usr/share/asahi-audio/j415/tweeters-44.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-48.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-96.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-192.wav"
+                        "/usr/share/asahi-audio/j413/tweeters-44.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-48.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-96.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-192.wav"
                     ],
                     "channel": 0,
-                    "gain": 1.0
+                    "gain": 1.6
                 }
             },
             {
@@ -58,13 +58,13 @@
                 "name": "convRT",
                 "config": {
                     "filename": [
-                        "/usr/share/asahi-audio/j415/tweeters-44.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-48.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-96.wav",
-                        "/usr/share/asahi-audio/j415/tweeters-92.wav"
+                        "/usr/share/asahi-audio/j413/tweeters-44.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-48.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-96.wav",
+                        "/usr/share/asahi-audio/j413/tweeters-92.wav"
                     ],
                     "channel": 0,
-                    "gain": 1.0
+                    "gain": 1.6
                 }
             },
             {
@@ -73,13 +73,13 @@
                 "name": "convLW",
                 "config": {
                     "filename": [
-                        "/usr/share/asahi-audio/j415/woofers-44.wav",
-                        "/usr/share/asahi-audio/j415/woofers-48.wav",
-                        "/usr/share/asahi-audio/j415/woofers-96.wav",
-                        "/usr/share/asahi-audio/j415/woofers-192.wav"
+                        "/usr/share/asahi-audio/j413/woofers-44.wav",
+                        "/usr/share/asahi-audio/j413/woofers-48.wav",
+                        "/usr/share/asahi-audio/j413/woofers-96.wav",
+                        "/usr/share/asahi-audio/j413/woofers-192.wav"
                     ],
                     "channel": 0,
-                    "gain": 1.0
+                    "gain": 1.2
                 }
             },
             {
@@ -88,34 +88,14 @@
                 "name": "convRW",
                 "config": {
                     "filename": [
-                        "/usr/share/asahi-audio/j415/woofers-44.wav",
-                        "/usr/share/asahi-audio/j415/woofers-48.wav",
-                        "/usr/share/asahi-audio/j415/woofers-96.wav",
-                        "/usr/share/asahi-audio/j415/woofers-192.wav"
+                        "/usr/share/asahi-audio/j413/woofers-44.wav",
+                        "/usr/share/asahi-audio/j413/woofers-48.wav",
+                        "/usr/share/asahi-audio/j413/woofers-96.wav",
+                        "/usr/share/asahi-audio/j413/woofers-192.wav"
                     ],
                     "channel": 0,
-                    "gain": 1.0
+                    "gain": 1.2
                 }
-            },
-            {
-                "type": "builtin",
-                "label": "copy",
-                "name": "copyLW"
-            },
-            {
-                "type": "builtin",
-                "label": "copy",
-                "name": "copyRW"
-            },
-            {
-                "type": "builtin",
-                "label": "copy",
-                "name": "copyLW2"
-            },
-            {
-                "type": "builtin",
-                "label": "copy",
-                "name": "copyRW2"
             },
             {
                 "type": "lv2",
@@ -171,22 +151,16 @@
             {"output": "convRW:Out", "input": "woofer_bp:in_r"},
             {"output": "woofer_bp:out_l", "input": "woofer_lim:in_l"},
             {"output": "woofer_bp:out_r", "input": "woofer_lim:in_r"},
-            {"output": "woofer_lim:out_l", "input": "copyLW:In"},
-            {"output": "woofer_lim:out_r", "input": "copyRW:In"},
-            {"output": "woofer_lim:out_l", "input": "copyLW2:In"},
-            {"output": "woofer_lim:out_r", "input": "copyRW2:In"},
         ],
         "inputs": [
             "bassex:in_l",
             "bassex:in_r"
         ],
         "outputs": [
-            "copyLW:Out",
-            "copyRW:Out",
+            "woofer_lim:out_l",
+            "woofer_lim:out_r",
             "convLT:Out",
-            "convRT:Out",
-            "copyLW2:Out",
-            "copyRW2:Out"
+            "convRT:Out"
         ],
         "capture.volumes": [
             {
@@ -204,7 +178,7 @@
         ]
     },
     "capture.props": {
-        "node.name": "audio_effect.j415-convolver",
+        "node.name": "audio_effect.j413-convolver",
         "media.class": "Audio/Sink",
         "audio.channels": "2",
         "audio.position": ["FL", "FR"],
@@ -215,11 +189,11 @@
         "state.default-channel-volume": 0.343,
     },
     "playback.props": {
-        "node.name": "effect_output.j415-convolver",
-        "target.object": "alsa_output.platform-sound.HiFi__hw_AppleJ415_1__sink",
+        "node.name": "effect_output.j413-convolver",
+        "target.object": "alsa_output.platform-sound.HiFi__hw_AppleJ413_1__sink",
         "node.passive": "true",
-        "audio.channels": "6",
+        "audio.channels": "4",
         "audio.rate": 48000,
-        "audio.position": ["FL", "FR", "RL", "RR", "FC", "LFE"]
+        "audio.position": ["FL", "FR", "RL", "RR"]
     }
 }

@@ -1,8 +1,14 @@
-asahi-audio (0.5-1~ubuntuasahi0) mantic; urgency=medium
+asahi-audio (1.6-1~ubuntuasahi23.10.1) mantic; urgency=medium
 
   * Backport to Ubuntu mantic
 
  -- Tobias Heider <me@tobhe.de>  Thu, 23 Nov 2023 01:20:57 +0100
+
+asahi-audio (1.6-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Andreas Henriksson <andreas@fatal.se>  Wed, 20 Dec 2023 20:19:57 +0100
 
 asahi-audio (0.5-1) experimental; urgency=medium
 
