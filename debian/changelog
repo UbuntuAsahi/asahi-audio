@@ -1,6 +1,6 @@
-asahi-audio (1.6-1~ubuntuasahi23.10.1) mantic; urgency=medium
+asahi-audio (1.6-1~ubuntuasahi22.04.1) jammy; urgency=medium
 
-  * Backport to Ubuntu mantic
+  * Backport to Ubuntu jammy
 
  -- Tobias Heider <me@tobhe.de>  Thu, 23 Nov 2023 01:20:57 +0100
 
